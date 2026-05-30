@@ -9,7 +9,7 @@ let x = 50;
 let y = 50;
 
 function update() {
-  x +=1 ;
+  //x += 1;
 }
 
 function draw() {
