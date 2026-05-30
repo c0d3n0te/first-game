@@ -1,5 +1,5 @@
 window.addEventListener("keydown", function(e) {
-  if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", " "].inclues(e.key)) {
+  if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", " "].includes(e.key)) {
     e.preventDefault();
   }
 });
@@ -17,19 +17,19 @@ let y = 50;
 const keys = {};
 
 document.addEventListener("keydown", e=> {
-  keys[e.key]=true:
+  keys[e.key]=true;
 });
 
 document.addEventListener("keyup", e=> {
-  keys[e.key]=false:
+  keys[e.key]=false;
 });
 
 function update() {
   // Arrow Keys
-  if (e.key === "ArrowRight") x += 5;
-  if (e.key === "ArrowLeft") x -= 5;
-  if (e.key === "ArrowUp") y -= 5;
-  if (e.key === "ArrowDown") y += 5;
+  if (keys["ArrowRight"]) x += 5;
+  if (keys["ArrowLeft"]) x -= 5;
+  if (keys["ArrowUp"]) y -= 5;
+  if (keys["ArrowDown"]) y += 5;
   // WASD Keys
   if (keys["d"]) x += 5;
   if (keys["a"]) x -= 5;
