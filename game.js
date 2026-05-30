@@ -1,3 +1,9 @@
+window.addEventListener("keydown", function(e) {
+  if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", " "].inclues(e.key)) {
+    e.preventDefault();
+  }
+});
+
 console.log("JS Loaded");
 
 const canvas = document.getElementById("game");
