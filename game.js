@@ -8,8 +8,27 @@ pawn.src = "pawn.png";
 let x = 50;
 let y = 50;
 
+const keys = {};
+
+document.addEventListener("keydown", e=> {
+  keys[e.key]=true:
+});
+
+document.addEventListener("keyup", e=> {
+  keys[e.key]=false:
+});
+
 function update() {
-  //x += 1;
+  // Arrow Keys
+  if (e.key === "ArrowRight") x += 5;
+  if (e.key === "ArrowLeft") x -= 5;
+  if (e.key === "ArrowUp") y -= 5;
+  if (e.key === "ArrowDown") y += 5;
+  // WASD Keys
+  if (keys["d"]) x += 5;
+  if (keys["a"]) x -= 5;
+  if (keys["w"]) y -= 5;
+  if (keys["s"]) y += 5;
 }
 
 function draw() {
@@ -24,10 +43,3 @@ function loop() {
 }
 
 loop();
-
-document.addEventListener("keydown", e=> {
-  if (e.key === "ArrowRight") x += 5;
-  if (e.key === "ArrowLeft") x -= 5;
-  if (e.key === "ArrowUp") y -= 5;
-  if (e.key === "ArrowDown") y += 5;
-});
