@@ -11,7 +11,7 @@ const ctx = canvas.getContext("2d");
 const pawn = new Image();
 pawn.src = "pawn.png";
 
-let x = 50;
+let x = 35;
 let y = 225;
 
 const keys = {};
