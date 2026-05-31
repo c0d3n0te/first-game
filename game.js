@@ -9,7 +9,7 @@ console.log("JS Update PLEASE");
 const canvas = document.getElementById("game");
 const ctx = canvas.getContext("2d");
 const pawn = new Image();
-pawn.src = "pawn.png";
+pawn.src = "images/sprites/pawn.png";
 
 let x = 35;
 let y = 225;
