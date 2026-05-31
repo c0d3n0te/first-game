@@ -50,7 +50,7 @@ function update() {
 function draw() {
   ctx.clearRect(0,0,canvas.width,canvas.height);
   ctx.drawImage(background,-cameraX,0);
-  ctx.drawImage(pawn,canvas.width/2,playerY,390,455);
+  ctx.drawImage(pawn,playerX - cameraX, playerY, pawnWidth, pawnHeight);
 }
 
 function loop() {
