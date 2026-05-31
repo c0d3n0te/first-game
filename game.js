@@ -4,7 +4,7 @@ window.addEventListener("keydown", function(e) {
   }
 });
 
-console.log("JS Loaded");
+console.log("JS Updated");
 
 const canvas = document.getElementById("game");
 const ctx = canvas.getContext("2d");
