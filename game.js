@@ -11,8 +11,8 @@ const ctx = canvas.getContext("2d");
 const pawn = new Image();
 pawn.src = "pawn.png";
 
-let x = 80;
-let y = 125;
+let x = 50;
+let y = 225;
 
 const keys = {};
 
@@ -39,7 +39,7 @@ function update() {
 
 function draw() {
   ctx.clearRect(0,0,canvas.width,canvas.height);
-  ctx.drawImage(pawn,x,y,405,455);
+  ctx.drawImage(pawn,x,y,390,455);
 }
 
 function loop() {
