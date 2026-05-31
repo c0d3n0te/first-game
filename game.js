@@ -9,7 +9,7 @@ const ctx = canvas.getContext("2d");
 const pawn = new Image();
 pawn.src = "images/sprites/pawn.png";
 const background = new Image();
-background.src = "images/backgrounds/scene1-flowers-full.png"
+background.src = "Untitled227_20260531144236.png"
 
 let playerX = 35;
 let playerY = 225;
