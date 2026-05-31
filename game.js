@@ -30,6 +30,8 @@ document.addEventListener("keyup", e=> {
   keys[e.key]=false;
 });
 
+let worldWidth = 0;
+
 background.onload = () => {
   worldWidth = background.width;
 };
