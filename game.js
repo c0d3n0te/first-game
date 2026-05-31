@@ -4,8 +4,6 @@ window.addEventListener("keydown", function(e) {
   }
 });
 
-console.log("JS Update PLEASE");
-
 const canvas = document.getElementById("game");
 const ctx = canvas.getContext("2d");
 const pawn = new Image();
@@ -50,4 +48,4 @@ function loop() {
 
 loop();
 
-//trigger run?? pt 6
+console.log("JS Updated");
