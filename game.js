@@ -12,7 +12,7 @@ const pawn = new Image();
 pawn.src = "pawn.png";
 
 let x = 80;
-let y = 425;
+let y = 525;
 
 const keys = {};
 
