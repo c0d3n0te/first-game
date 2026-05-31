@@ -28,13 +28,13 @@ function update() {
   // Arrow Keys
   if (keys["ArrowRight"]) x += 5;
   if (keys["ArrowLeft"]) x -= 5;
-  if (keys["ArrowUp"]) y -= 5;
-  if (keys["ArrowDown"]) y += 5;
+  //if (keys["ArrowUp"]) y -= 5;
+  //if (keys["ArrowDown"]) y += 5;
   // WASD Keys
   if (keys["d"]) x += 5;
   if (keys["a"]) x -= 5;
-  if (keys["w"]) y -= 5;
-  if (keys["s"]) y += 5;
+  //if (keys["w"]) y -= 5;
+  //if (keys["s"]) y += 5;
 }
 
 function draw() {
