@@ -39,7 +39,7 @@ function update() {
 
 function draw() {
   ctx.clearRect(0,0,canvas.width,canvas.height);
-  ctx.drawImage(pawn,x,y,235,255);
+  ctx.drawImage(pawn,x,y,425,455);
 }
 
 function loop() {
