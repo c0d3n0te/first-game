@@ -8,9 +8,12 @@ const canvas = document.getElementById("game");
 const ctx = canvas.getContext("2d");
 const pawn = new Image();
 pawn.src = "images/sprites/pawn.png";
+const background = new Image();
+background.src = "images/background/scene1-flowers-full.png"
 
-let x = 35;
-let y = 225;
+let playerX = 35;
+let playerY = 225;
+let cameraX = 0;
 
 const keys = {};
 
@@ -23,21 +26,16 @@ document.addEventListener("keyup", e=> {
 });
 
 function update() {
-  // Arrow Keys
-  if (keys["ArrowRight"]) x += 5;
-  if (keys["ArrowLeft"]) x -= 5;
-  //if (keys["ArrowUp"]) y -= 5;
-  //if (keys["ArrowDown"]) y += 5;
-  // WASD Keys
-  if (keys["d"]) x += 5;
-  if (keys["a"]) x -= 5;
-  //if (keys["w"]) y -= 5;
-  //if (keys["s"]) y += 5;
+  if (keys["ArrowRight"] || keys["d"]) playerX += 5;
+  if (keys["ArrowLeft"] || keys["a"]) playerX -= 5;
+  // centers "camera" to player
+  cameraX = playerX - canvas.width / 2;
 }
 
 function draw() {
   ctx.clearRect(0,0,canvas.width,canvas.height);
-  ctx.drawImage(pawn,x,y,390,455);
+  ctx.drawImage(background,-cameraX,0);
+  ctx.drawImage(pawn,canvas.width/2,playerY,390,455);
 }
 
 function loop() {
@@ -48,4 +46,4 @@ function loop() {
 
 loop();
 
-console.log("JS Updated");
+console.log("JS Loaded");
