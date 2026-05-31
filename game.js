@@ -38,7 +38,7 @@ function update() {
   if (keys["ArrowRight"] || keys["d"]) playerX += 5;
   if (keys["ArrowLeft"] || keys["a"]) playerX -= 5;
   if (playerX < 0) playerX = 0;
-  if (playerX > worldWidth = pawnWidth) playerX = worldWidth - pawnWidth;
+  if (playerX > worldWidth - pawnWidth) playerX = worldWidth - pawnWidth;
   // centers "camera" to player
   cameraX = playerX - canvas.width / 2;
   if (cameraX < 0) cameraX = 0;
