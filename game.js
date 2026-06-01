@@ -13,8 +13,8 @@ pawn.src = "images/sprites/pawn.png";
 const background = new Image();
 background.src = "Untitled227_20260531144236.png"
 
-let playerX = 20;
-let playerY = 225;
+let playerX = 35;
+let playerY = 240;
 let cameraX = 0;
 
 const pawnWidth = 390;
@@ -63,4 +63,4 @@ function loop() {
 
 loop();
 
-console.log("JS Loaded 3");
+console.log("JS Loaded");
