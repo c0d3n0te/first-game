@@ -14,7 +14,7 @@ const background = new Image();
 background.src = "Untitled227_20260531144236.png"
 
 let playerX = 35;
-let playerY = 240;
+let playerY = 260;
 let cameraX = 0;
 
 const pawnWidth = 390;
