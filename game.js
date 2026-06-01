@@ -63,4 +63,4 @@ function loop() {
 
 loop();
 
-console.log("JS Loaded");
+console.log("JS Loaded 2");
